@@ -1,8 +1,10 @@
 
 function MovieName(props){
-    return ( <div>
+    return (
+            <div>
                  <h1> Movie name is : {props.brand}</h1>
-            </div>)
+            </div>
+            )
     
 }
 export default MovieName;
