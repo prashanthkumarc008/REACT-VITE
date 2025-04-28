@@ -3,9 +3,9 @@ function Movie(){
     let movie_name='kgf';
     
     
-return <div>
+return (<div>
         <MovieName brand={movie_name}/>
-        </div>
+        </div>)
         
 }
 
