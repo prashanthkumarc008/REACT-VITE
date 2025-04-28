@@ -1,24 +1,16 @@
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import BasicExample from './component/BasicExample';
+import Login from './component/login';
 
 
 function App(){
+
     
     return(
         <>
             <div>
-            
-                <h1>hgefyuegd</h1>
-                <h1>hgffjjhgjhbngfgjg</h1>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-                <p>hgdvcjhdvcjh</p>
-
+            <BasicExample/>
+            <Login/>
             </div>
         </>
     )
