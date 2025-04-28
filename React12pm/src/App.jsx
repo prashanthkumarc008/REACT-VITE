@@ -5,8 +5,6 @@ import Movie from './component/Movie';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 function App(){
-
-    
     return(
         <>
             <div>
@@ -17,6 +15,5 @@ function App(){
             </div>
         </>
     )
-
 }
 export default App

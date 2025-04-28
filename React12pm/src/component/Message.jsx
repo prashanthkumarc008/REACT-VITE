@@ -7,9 +7,6 @@ class Message extends Component{
             <h1>This is class component</h1>
                 <h2>Good Morning</h2>
         </Container>
-        
-            
-        
         </div>
     }
 }
