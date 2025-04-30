@@ -3,7 +3,7 @@ function Movie(){
     let movie_name='kgf';
     
 return (
-        <div>
+        <div className="bg-info">
         <MovieName name={movie_name}/>
         </div>
         )     

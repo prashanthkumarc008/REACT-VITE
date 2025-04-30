@@ -1,8 +1,8 @@
 import BasicExample from './component/BasicExample';
 import Gmgfgn from './component/gmgfgn';
-// import Login from './component/Login';
-// import Message from './component/Message';
-// import Movie from './component/Movie';
+import Login from './component/Login';
+import Message from './component/Message';
+import Movie from './component/Movie';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,9 +11,9 @@ function App(){
         <>
             <div>
             <BasicExample/>
-            {/* <Login/>
+            <Login/>
             <Message/>
-            <Movie/> */}
+            <Movie/>
             <Gmgfgn/>
             </div>
         </>

@@ -6,6 +6,7 @@ let Gmgfgn=()=>{
 
     return(
         <>
+        <div className="bg-info">
             <Container>
                   <h1> Gm/Gf/Gn Component</h1>
             <h1> hello : {msg}</h1>
@@ -15,6 +16,8 @@ let Gmgfgn=()=>{
 
             </Container>
           
+        </div>
+            
         </>
     )
 }
