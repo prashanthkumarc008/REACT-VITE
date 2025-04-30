@@ -1,4 +1,5 @@
 import BasicExample from './component/BasicExample';
+import Car from './component/Car';
 import Gmgfgn from './component/gmgfgn';
 import Login from './component/Login';
 import Message from './component/Message';
@@ -15,6 +16,7 @@ function App(){
             <Message/>
             <Movie/>
             <Gmgfgn/>
+            <Car/>
             </div>
         </>
     )
