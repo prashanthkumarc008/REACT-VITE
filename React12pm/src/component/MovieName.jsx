@@ -4,7 +4,8 @@ function MovieName(props){
     return (
             <div>
                <Container>
-                   <h1> Movie name is : {props.brand}</h1> 
+                    <p> {JSON.stringify(props)}</p>
+                   <h1> Movie name is : {props.name}</h1> 
                </Container>   
             </div>
             )

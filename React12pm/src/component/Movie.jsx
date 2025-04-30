@@ -4,7 +4,7 @@ function Movie(){
     
 return (
         <div>
-        <MovieName brand={movie_name}/>
+        <MovieName name={movie_name}/>
         </div>
         )     
 }
