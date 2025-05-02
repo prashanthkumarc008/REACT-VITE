@@ -6,6 +6,7 @@ import Message from './component/Message';
 import Movie from './component/Movie';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import User from './propsEx/User';
 
 function App(){
     return(
@@ -17,6 +18,7 @@ function App(){
             <Movie/>
             <Gmgfgn/>
             <Car/>
+            <User/>
             </div>
         </>
     )
