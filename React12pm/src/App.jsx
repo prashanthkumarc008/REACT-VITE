@@ -7,6 +7,7 @@ import Movie from './component/Movie';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import User from './propsEx/User';
+import FormUser from './form/FormUser';
 
 function App(){
     return(
@@ -19,6 +20,7 @@ function App(){
             <Gmgfgn/>
             <Car/>
             <User/>
+            <FormUser/>
             </div>
         </>
     )
