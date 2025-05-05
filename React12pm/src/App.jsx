@@ -8,6 +8,7 @@ import Movie from './component/Movie';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import User from './propsEx/User';
 import FormUser from './form/FormUser';
+import IncDec from './component/IncDec';
 
 function App(){
     return(
@@ -21,6 +22,7 @@ function App(){
             <Car/>
             <User/>
             <FormUser/>
+            <IncDec/>
             </div>
         </>
     )
