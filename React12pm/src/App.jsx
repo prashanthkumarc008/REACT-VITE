@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import User from './propsEx/User';
 import FormUser from './form/FormUser';
 import IncDec from './component/IncDec';
+import Product from './component/product';
+import Flipkart from './component/flipkart';
 
 function App(){
     return(
@@ -23,6 +25,8 @@ function App(){
             <User/>
             <FormUser/>
             <IncDec/>
+            <Product/>
+            <Flipkart/>
             </div>
         </>
     )

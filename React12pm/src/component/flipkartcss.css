@@ -1,0 +1,132 @@
+
+.product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #eef1f1;
+    flex-wrap: wrap;
+}
+.product-image {
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.product-details {
+    flex: 1;
+    min-width: 300px;
+}
+.product-title a {
+    font-size: 18px;
+    color: #007185;
+    text-decoration: none;
+    font-weight: bold;
+}
+.product-title a:hover {
+    text-decoration: underline;
+}
+.product-variant {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.seller-info {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+.seller-info img {
+    vertical-align: middle;
+    width: 20px;
+    margin-left: 5px;
+}
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.current-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #B12704;
+}
+.original-price {
+    font-size: 14px;
+    color: #555;
+    text-decoration: line-through;
+}
+.discount {
+    font-size: 14px;
+    color: #007600;
+}
+
+.add-item-btn {
+    background-color: #007600;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.add-item-btn:hover {
+    background-color: #005700;
+}
+
+.total-price{
+    font-weight: 500;
+    padding: 10px 0px;
+}
+.quantity-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.quantity-actions button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.quantity-actions input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.save-remove {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #007185;
+    margin: 10px 0;
+}
+.save-remove div {
+    cursor: pointer;
+}
+.save-remove div:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .product-details {
+        text-align: center;
+    }
+    .price-section {
+        justify-content: center;
+    }
+}
