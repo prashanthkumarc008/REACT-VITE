@@ -13,6 +13,8 @@ import Product from './component/product';
 import Flipkart from './component/flipkart';
 import Msg from './component/Msg';
 import Employee from './component/Employee';
+import CompA from './hookss/CompA';
+import Callbb from './component/Callbb';
 
 function App(){
     return(
@@ -31,6 +33,8 @@ function App(){
             <Flipkart/>
             <Msg/>
             <Employee/>
+            <CompA/>
+            <Callbb/>
             </div>
         </>
     )
