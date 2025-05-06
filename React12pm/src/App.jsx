@@ -11,6 +11,8 @@ import FormUser from './form/FormUser';
 import IncDec from './component/IncDec';
 import Product from './component/product';
 import Flipkart from './component/flipkart';
+import Msg from './component/Msg';
+import Employee from './component/Employee';
 
 function App(){
     return(
@@ -27,6 +29,8 @@ function App(){
             <IncDec/>
             <Product/>
             <Flipkart/>
+            <Msg/>
+            <Employee/>
             </div>
         </>
     )
