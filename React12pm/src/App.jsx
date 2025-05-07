@@ -4,7 +4,6 @@ import Gmgfgn from './component/gmgfgn';
 import Login from './component/Login';
 import Message from './component/Message';
 import Movie from './component/Movie';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import User from './propsEx/User';
 import FormUser from './form/FormUser';
@@ -16,6 +15,9 @@ import Employee from './component/Employee';
 import CompA from './hookss/CompA';
 import CallBack from './component/CallBack';
 import UseReff from './hookss/UseReff';
+import UseEff from './hookss/UseEff';
+import Table from './component/Table';
+import Company from './component/Company';
 
 
 
@@ -39,6 +41,9 @@ function App(){
             <CompA/>
             <CallBack/>
             <UseReff/>
+            <UseEff/>
+            <Table/>
+            <Company/>
             </div>
         </>
     )
