@@ -18,6 +18,7 @@ import UseReff from './hookss/UseReff';
 import UseEff from './hookss/UseEff';
 import Table from './component/Table';
 import Company from './component/Company';
+import ApiFetch from './component/ApiFetch';
 
 
 
@@ -44,6 +45,7 @@ function App(){
             <UseEff/>
             <Table/>
             <Company/>
+            <ApiFetch/>
             </div>
         </>
     )
