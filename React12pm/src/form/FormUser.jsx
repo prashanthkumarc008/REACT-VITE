@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-let Login = ()=>{
+let FormUser = ()=>{
     let [user,setUser]  = useState({"email":"","password":""})
     let emailHandler = (event)=>{
         console.log(event)
@@ -26,4 +26,4 @@ let Login = ()=>{
             </form>
             </div>
 }
-export default Login;
+export default FormUser;

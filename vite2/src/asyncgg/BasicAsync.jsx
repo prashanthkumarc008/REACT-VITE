@@ -4,23 +4,21 @@ const BasicAsync = () => {
       const [users, setUsers] = useState([]);
       const [loading, setLoading] = useState(true);
       const [error, setError] = useState(null);
-
-        // Run fetchUsers on component mount
-      useEffect(() =>{
-        // Fetch users using async/await with Axios
-            async () => {
-                try {
-                    setLoading(true);
-                    const response = await Axios.get('https://jsonplaceholder.typicode.com/users');
-                    setUsers(response.data);
-                    setLoading(false);
-                    } 
-                catch(error){
-                    setError('Failed to fetch users');
-                    setLoading(false);
-                            }
-            };
-        }, []);
+         // Define and call async function
+        const fetchUsers = async () => {
+            try {
+              setLoading(true);
+              const response = await Axios.get('https://jsonplaceholder.typicode.com/users');
+              setUsers(response.data);
+              setLoading(false);
+            } catch (error) {
+              setError('Failed to fetch users');
+              setLoading(false);
+            }
+          };
+      useEffect(() => {
+        fetchUsers(); // Call the async function
+      }, []); // Empty dependency array for mount-only execution
 
       // Render loading, error, or data
       if (loading) return <div className="text-center mt-10">Loading...</div>;
@@ -32,7 +30,7 @@ const BasicAsync = () => {
           <ul className="space-y-2">
             {users.map(user => (
               <li key={user.id} className="p-4 bg-gray-100 rounded shadow">
-               {user.id} {user.name} ({user.email})
+                {user.id} {user.name} ({user.email})({JSON.stringify(user.address)})
               </li>
             ))}
           </ul>
