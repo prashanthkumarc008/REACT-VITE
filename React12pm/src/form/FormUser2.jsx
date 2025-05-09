@@ -1,24 +1,30 @@
 import { useState } from "react";
 
-function FormUser() {
+function FormUser2() {
   const [user, setUser] = useState({ email: "", password: "" });
 
   const handleForm = (e) => {
-    if (e.type === "change") {
-      const { name, value } = e.target;
-      setUser((prevUser) => ({
-        ...prevUser,
-        [name]: value
-      }));
-    } else if (e.type === "submit") {
-      e.preventDefault();
-      console.log("User:", user);
-      alert(JSON.stringify(user));
+    switch (e.type) {
+      case "change":
+        const { name, value } = e.target;
+        setUser((prevUser) => ({
+          ...prevUser,
+          [name]: value
+        }));
+        break;
+      case "submit":
+        e.preventDefault();
+        console.log("User:", user);
+        alert(JSON.stringify(user));
+        break;
+      default:
+        break;
     }
   };
+
   return (
     <div className="container">
-        <h1>Form Handling with IF-ELSE Statement</h1>
+    <h1>Form Handling with SWITCH Statement</h1>
       <pre>{JSON.stringify(user)}</pre>
       <form onSubmit={handleForm}>
         <input
@@ -41,4 +47,4 @@ function FormUser() {
   );
 }
 
-export default FormUser;
+export default FormUser2;

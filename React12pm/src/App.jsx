@@ -19,6 +19,7 @@ import UseEff from './hookss/UseEff';
 import Table from './component/Table';
 import Company from './component/Company';
 import ApiFetch from './component/ApiFetch';
+import FormUser2 from './form/FormUser2';
 
 
 
@@ -36,6 +37,7 @@ function App(){
             <Car/>
             <User/>
             <FormUser/>
+            <FormUser2/>
             <IncDec/>
             <Product/>
             <Flipkart/>
