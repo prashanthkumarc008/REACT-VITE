@@ -5,23 +5,22 @@ const BasicAsync = () => {
       const [loading, setLoading] = useState(true);
       const [error, setError] = useState(null);
 
-      // Fetch users using async/await with Axios
-      const fetchUsers = async () => {
-        try {
-          setLoading(true);
-          const response = await Axios.get('https://jsonplaceholder.typicode.com/users');
-          setUsers(response.data);
-          setLoading(false);
-        } catch (error) {
-          setError('Failed to fetch users');
-          setLoading(false);
-        }
-      };
-
-      // Run fetchUsers on component mount
-      useEffect(() => {
-        fetchUsers();
-      }, []);
+        // Run fetchUsers on component mount
+      useEffect(() =>{
+        // Fetch users using async/await with Axios
+            async () => {
+                try {
+                    setLoading(true);
+                    const response = await Axios.get('https://jsonplaceholder.typicode.com/users');
+                    setUsers(response.data);
+                    setLoading(false);
+                    } 
+                catch(error){
+                    setError('Failed to fetch users');
+                    setLoading(false);
+                            }
+            };
+        }, []);
 
       // Render loading, error, or data
       if (loading) return <div className="text-center mt-10">Loading...</div>;
