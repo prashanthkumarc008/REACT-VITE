@@ -22,6 +22,8 @@ import ApiFetch from './component/ApiFetch';
 
 
 
+
+
 function App(){
     return(
         <>
@@ -46,6 +48,7 @@ function App(){
             <Table/>
             <Company/>
             <ApiFetch/>
+            
             </div>
         </>
     )
