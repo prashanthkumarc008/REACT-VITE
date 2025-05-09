@@ -1,29 +1,46 @@
 import { useState } from "react";
 
-let FormUser = ()=>{
-    let [user,setUser]  = useState({"email":"","password":""})
-    let emailHandler = (event)=>{
-        console.log(event)
-        console.log(event.target)
-        console.log(event.target.value)
-        setUser({...user,email:event.target.value})
-    }
-    let pwdHandler=(event)=>{
-        setUser({...user,password:event.target.value})
-    }
-    let submitHandler = ()=>{
-        //send data to backend or api
-        console.log(user)
-        alert(JSON.stringify(user))
-    }
-    return <div>
-            <pre>{JSON.stringify(user)}</pre>
-            <h4>Login Details</h4>
-            <form onSubmit={submitHandler} >
-            EmailId::::: <input type="text" onInput={emailHandler} />  <br /> <br />
-            Password: <input type="password" onInput={pwdHandler} /> <br /> <br />
-            <input type="submit" value={"Login"} />
-            </form>
-            </div>
+function FormUser() {
+  const [user, setUser] = useState({ email: "", password: "" });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser((prevUser) => ({
+      ...prevUser,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("User:", user);
+    alert(JSON.stringify(user));
+  };
+
+  return (
+    <div className="container">
+        <pre>{JSON.stringify(user)}</pre>
+        <form onSubmit={handleSubmit}>
+      <input
+        type="email"
+        name="email"
+        value={user.email}
+        onChange={handleChange}
+        placeholder="Email"
+      /><br/>
+      <input
+        type="password"
+        name="password"
+        value={user.password}
+        onChange={handleChange}
+        placeholder="Password"
+      /><br/>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+        
+    
+  );
 }
+
 export default FormUser;
