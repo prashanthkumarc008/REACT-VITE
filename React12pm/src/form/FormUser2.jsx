@@ -25,6 +25,7 @@ function FormUser2() {
   return (
     <div className="container">
     <h1>Form Handling with SWITCH Statement</h1>
+    <h2>Switch Case</h2>
       <pre>{JSON.stringify(user)}</pre>
       <form onSubmit={handleForm}>
         <input

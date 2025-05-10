@@ -18,7 +18,8 @@ function FormUser() {
   };
   return (
     <div className="container">
-        <h1>Form Handling with IF-ELSE Statement</h1>
+        <h1>Form Handling with IF - ELSE Statement</h1>
+        <h2>IF-ELSE</h2>
       <pre>{JSON.stringify(user)}</pre>
       <form onSubmit={handleForm}>
         <input
