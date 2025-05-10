@@ -28,20 +28,23 @@ let ApiFetch=()=>{
                         </tr>
                     </thead>
                 <tbody>
-                    {users.length>0 ? <>
-                        {
-                            users.map((user)=>{
-                                return <tr key={user.id}>
-                                            <td>{user.id}</td>
-                                            <td>{user.username}</td>
-                                            <td>{user.address.city}</td>
-                                    </tr>
-                            })
-                        }
-                    </>: 
-                    <> {<pre>cvcvsvf</pre>} </>
-                    }
-                </tbody>
+  {users.length > 0 ? (
+    users.map((user) => (
+      <tr key={user.id}>
+        <td>{user.id}</td>
+        <td>{user.username}</td>
+        <td>{user.address.city}</td>
+      </tr>
+    ))
+  ) : (
+    <tr>
+      <td colSpan="3">
+        <pre>No users available</pre>
+      </td>
+    </tr>
+  )}
+</tbody>
+
             </table>
             </div>
             </div>
