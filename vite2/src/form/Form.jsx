@@ -17,7 +17,7 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
-        alert('Form submitted! Check console for data.');
+        alert('Form submitted!');
     };
 
     return (
