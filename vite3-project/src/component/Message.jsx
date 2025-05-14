@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { gmAction, gnAction } from '../redux/Message/msg.action'
 
 function Message() {
-        let dispatch=useDispatch();
+        let dispatch=useDispatch;
     let gmHandler=()=>{
         dispatch(gmAction())
     }
@@ -19,4 +19,4 @@ function Message() {
   )
 }
 
-export default Message
+export default Message;

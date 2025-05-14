@@ -1,3 +1,4 @@
+import Message from "./component/Message"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-      
+      <Message/>
     </>
   )
 }
