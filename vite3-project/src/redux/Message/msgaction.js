@@ -1,13 +1,12 @@
-let gm='gm';
-let gn='gn';
+// Action types
+export const gm = 'GOOD_MORNING';
+export const gn = 'GOOD_NIGHT';
 
+// Action creators
+export const gmAction = () => ({
+  type: gm,
+});
 
-let gmAction=()=>{
-    return {type: gm}
-}
-
-let gnAction=()=>{
-    return {type: gn}
-}
-
-export {gmAction,gnAction,gm,gn};
+export const gnAction = () => ({
+  type: gn,
+});

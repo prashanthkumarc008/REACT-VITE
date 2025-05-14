@@ -1,18 +1,18 @@
-import { gm,gn } from "./msgaction";
-let initialState={
-  msg:"hello"
+// Initial state
+const initialState = {
+  msg: 'hello',
 };
-function msgreducer(state=initialState,action) {
+
+// Reducer function
+function msgreducer(state = initialState, action) {
   switch (action.type) {
-    case gm:
-      return {msg:"Good Morning"}
-    case gn:
-      return {msg:"Good Night"}
-      
-    default: return state;
-      
+    case 'GOOD_MORNING':
+      return { msg: 'Good Morning' };
+    case 'GOOD_NIGHT':
+      return { msg: 'Good Night' };
+    default:
+      return state;
   }
- 
 }
 
-export {msgreducer};
+export default msgreducer;
