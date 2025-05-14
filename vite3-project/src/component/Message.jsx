@@ -1,6 +1,6 @@
-import React from 'react'
+
 import { useDispatch } from 'react-redux'
-import { gmAction, gnAction } from '../redux/Message/msg.action'
+import { gmAction, gnAction } from '../redux/Message/msgaction'
 
 function Message() {
         let dispatch=useDispatch;
