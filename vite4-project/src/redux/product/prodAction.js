@@ -1,5 +1,6 @@
 let INC='inc_type';
 let DEC='dec_type';
+
 let incAction=()=>{
     return{ type:INC}
 }
