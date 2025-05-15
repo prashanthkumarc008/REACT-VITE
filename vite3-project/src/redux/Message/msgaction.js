@@ -1,12 +1,16 @@
 // Action types
-export const gm = 'GOOD_MORNING';
-export const gn = 'GOOD_NIGHT';
+export const gm='gm_type';
+export const gn='gn_type';
+
+
 
 // Action creators
 export const gmAction = () => ({
-  type: gm,
+  type: gm
+
 });
 
 export const gnAction = () => ({
-  type: gn,
+  type: gn
 });
+
