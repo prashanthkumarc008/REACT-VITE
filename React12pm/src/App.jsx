@@ -20,6 +20,11 @@ import Table from './component/Table';
 import Company from './component/Company';
 import ApiFetch from './component/ApiFetch';
 import FormUser2 from './form/FormUser2';
+import { Route, Routes } from 'react-router-dom';
+import Home from './RouterEx/Home';
+import About from './RouterEx/About';
+import NotFound from './RouterEx/NotFound';
+import Navbar1 from './RouterEx/Navbar1';
 
 
 
@@ -50,6 +55,15 @@ function App(){
             <Table/>
             <Company/>
             <ApiFetch/>
+            <div>
+                <Navbar1/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/about" element={<About />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+            </div>
+            
             
             </div>
         </>

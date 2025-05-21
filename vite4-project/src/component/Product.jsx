@@ -1,24 +1,25 @@
-
 import { useDispatch, useSelector } from 'react-redux';
+import { incAction, decAction } from '../redux/prodAction';
 
 function Product() {
-    let dispatch= useDispatch()
-    let product=useSelector(state=>state.qty)
-    let incHndler=()=>{
+    const dispatch = useDispatch();
+    const product = useSelector((state) => state);
+
+    const incHandler = () => {
         dispatch(incAction());
-    }
-    let decHandler=()=>{
+    };
+
+    const decHandler = () => {
         dispatch(decAction());
-    }
+    };
 
-
-  return (
-    <div>
-        <pre>{JSON.stringify(product)}</pre>
-        <button onClick={incHndler}>+</button>
-        <button onClick={decHandler} >-</button>
-    </div>
-  )
+    return (
+        <div>
+            <pre>{JSON.stringify(product, null, 2)}</pre>
+            <button onClick={incHandler}>+</button>
+            <button onClick={decHandler}>-</button>
+        </div>
+    );
 }
 
 export default Product;

@@ -1,5 +1,6 @@
 import Product from "./component/Product"
 import { store } from "./redux/store"
+import { Provider } from 'react-redux'
 
 function App() {
 

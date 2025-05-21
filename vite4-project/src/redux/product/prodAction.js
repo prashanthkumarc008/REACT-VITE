@@ -1,5 +1,5 @@
-let INC='inc_type';
-let DEC='dec_type';
+let INC='INC';
+let DEC='DEC';
 
 let incAction=()=>{
     return{ type:INC}
